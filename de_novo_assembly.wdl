@@ -92,7 +92,7 @@ task shovill {
   }
 
   output {
-	  File       contigs_fasta = "out/${samplename}_contigs.fa"
+	  File       contigs_fasta = "out/${samplename}_contigs.fasta"
 	  File       contigs_gfa = "out/${samplename}_contigs.gfa"
     String     shovill_version = read_string("VERSION")
   }

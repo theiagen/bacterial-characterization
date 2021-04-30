@@ -7,7 +7,7 @@ workflow ecoli_char {
     File      contigs
   }
 
-  call abricate as abricate_amrfinder {
+  call abricate as abricate {
     input:
       samplename=SRR,
       contigs=contigs,
@@ -34,7 +34,7 @@ workflow ecoli_char {
   }
 
   output {
-    File    abricate_amrfinder_results                =abricate_amrfinder.abricate_results
+    File    abricate_results                =abricate.abricate_results
     File    abricate_virfinder_results                =abricate_virfinder.abricate_results
     File    amrfinderplus_results           =amrfinderplus.amrfinder_results
     File    serotypefinder_results          =serotypefinder.serotypefinder_results

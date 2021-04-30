@@ -10,3 +10,8 @@ workflows:
    primaryDescriptorPath: /de_novo_assembly.wdl
    testParameterFiles:
     - empty.json
+ - name: compile_ecoli
+   subclass: WDL
+   primaryDescriptorPath: /compile_ecoli_results.wdl
+   testParameterFiles:
+    - empty.json
